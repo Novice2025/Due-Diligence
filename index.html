@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Due Diligence Mastery: Corporate, Real Estate, and Personal</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use the Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Safelist for dynamic Tailwind colors used in JS generation */
+        .text-blue-600, .bg-blue-50, .border-blue-500, .text-blue-900 {}
+        .text-green-600, .bg-green-50, .border-green-500, .text-green-900 {}
+        .text-purple-600, .bg-purple-50, .border-purple-500, .text-purple-900 {}
+        .text-orange-600, .bg-orange-50, .border-orange-500, .text-orange-900 {}
+        
+        /* Dark Mode Specific Safelist (Deep Dark Colors) */
+        .bg-gray-900, .bg-gray-800, .bg-gray-700, .text-gray-100, .text-gray-300, .text-gray-400 {}
+        
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Header -->
+    <header class="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900 via-indigo-900 to-gray-900 text-white shadow-xl rounded-b-3xl">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                Due Diligence (in its complete form of usage)
+            </h1>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Core Concept Section (Changed bg-white to bg-gray-800, text to light) -->
+        <section class="mb-12 p-8 bg-gray-800 rounded-xl shadow-lg border-t-4 border-blue-500">
+            <!-- UPDATED HEADING -->
+            <h2 class="text-3xl font-bold text-gray-100 mb-4">
+                The Central Concept: Why We Perform Due Diligence (DD)?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Inner cards changed from bg-blue-50 to bg-gray-900/bg-blue-950 for deep contrast -->
+                <div class="p-4 bg-gray-900 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="font-bold text-blue-400">1. VERIFICAÇÃO</h3>
+                    <p class="text-gray-300 text-sm">Checar a verdade por trás de declarações e promessas. O ativo (empresa, imóvel, sistema) vale o que dizem?</p>
+                </div>
+                <div class="p-4 bg-gray-900 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="font-bold text-blue-400">2. MITIGAÇÃO DE RISCO</h3>
+                    <p class="text-gray-300 text-sm">Descobrir passivos e problemas ocultos (dívidas, processos) antes que se tornem sua responsabilidade.</p>
+                </div>
+                <div class="p-4 bg-gray-900 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="font-bold text-blue-400">3. VALOR E AJUSTE</h3>
+                    <p class="text-gray-300 text-sm">Usar as descobertas para negociar o preço final (ajuste de preço de compra) ou a desistir do negócio.</p>
+                </div>
+            </div>
+            
+            <p class="mt-6 text-lg text-gray-300">
+                **Due Diligence** (ou **Diligência Prévia**) é a investigação detalhada e metódica realizada antes de tomar uma decisão de alto risco e alto investimento. Não é apenas conferir, é auditar, confirmar e **antecipar problemas** em áreas como legal, financeira, fiscal, operacional e tecnológica.
+            </p>
+            
+            <!-- NEW ENGLISH WALKTHROUGH (Changed bg-gray-100 to bg-gray-700) -->
+            <div class="mt-8 p-6 bg-gray-700 rounded-xl border-l-4 border-indigo-500 shadow-inner">
+                <h3 class="text-xl font-bold text-indigo-400 mb-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1v-3m0 0l3-4m-3 4h-2m2 0h-5.455m1.5-4h.345M19 16a3 3 0 00.37-1.125A3 3 0 0017.5 13H14V8h1.25c.67 0 1.27.31 1.76.81l2 2A2 2 0 0120 12v3M4 16a3 3 0 013-3h10a3 3 0 013 3v2a3 3 0 01-3 3H7a3 3 0 01-3-3v-2z" /></svg>
+                    The Professional Walkthrough (English Usage)
+                </h3>
+                <p class="text-gray-300 italic leading-relaxed">
+                    "In the corporate world, Due Diligence is a structured, phase-driven process led by a transaction team. It officially begins with a comprehensive **Document Request List (DRL)** sent to the target company. The subsequent analysis, which often takes weeks or months, covers legal (litigation, key contracts), financial (specifically, a **Quality of Earnings - QoE** report), and operational risks. The goal is to move beyond mere confirmation; it is to **quantify the impact** of any findings, determining exactly how liabilities, unrecorded costs, or inaccurate projections will affect the final enterprise valuation and deal structure—often resulting in adjustments to the purchase price, or the negotiation of specific indemnities and escrows."
+                </p>
+                <p class="mt-3 text-sm text-indigo-400 font-semibold">
+                    Key Jargon: DRL, Quality of Earnings (QoE), Valuation Adjustment, Escrow, Indemnities.
+                </p>
+            </div>
+            <!-- END NEW ENGLISH WALKTHROUGH -->
+        </section>
+
+        <!-- Scenario Walkthroughs Container (Dynamically rendered) -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-100 mb-8 border-b-2 pb-2 border-blue-500">
+                Aplicações em Diferentes Cenários
+            </h2>
+            <div id="dd-scenarios" class="space-y-10">
+                <!-- DD Scenario Cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-10 rounded-t-3xl border-t border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm">
+                A Due Diligence transforma incerteza em risco gerenciável, seja na vida profissional ou pessoal.
+            </p>
+            <p class="text-xs mt-1 text-gray-400">
+                Desenvolvido por Daby's Compliance Program.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Data and Rendering -->
+    <script>
+        // --- 1. DATA DEFINITIONS ---
+        const DD_SCENARIOS = [
+            {
+                id: "ma",
+                color: "green",
+                title: "1. Comprando uma Empresa (Fusões & Aquisições - M&A)",
+                english: "Corporate Due Diligence",
+                pt_concept: "Diligência Corporativa / Auditoria de Compra",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2zM8 17v-1a4 4 0 014-4h0a4 4 0 014 4v1m-4-7a3 3 0 00-3-3H6a3 3 0 00-3 3v14a3 3 0 003 3h12a3 3 0 003-3V10a3 3 0 00-3-3h-3a3 3 0 00-3 3z" /></svg>`,
+                description_pt: "No mundo dos negócios, é uma **auditoria completa**. Antes de comprar, investir ou fundir com outra empresa, você contrata advogados, contadores e consultores para revirar **todos os números, contratos e processos**. O objetivo é descobrir se o balanço é real, se há dívidas escondidas, processos judiciais pendentes ou problemas fiscais. É a 'checagem de saúde' da empresa.",
+                american_concept: "The deep dive. It's about validating the financial model, finding **'skeletons in the closet'**, and making sure the purchase price isn't based on smoke and mirrors. This is where the deal breaks or the price gets hammered down.",
+                american_jargon: "Deep Dive, Quality of Earnings (QoE), Reps and Warranties, Material Adverse Change (MAC).",
+                positions: [
+                    { 
+                        level: "C-Level/Diretor", role: "Decisão Estratégica", action: "Avaliar o relatório final de risco (Legal, Fiscal, Financeiro) para ajustar o preço de compra (*purchase price adjustment*) ou desistir do negócio.",
+                        level_en: "C-Level/Director", role_en: "Strategic Decision Making", action_en: "Evaluate the final risk report (Legal, Tax, Financial) to adjust the purchase price or withdraw from the deal."
+                    },
+                    { 
+                        level: "Analista/Gerente (Finanças)", role: "Análise de Dados", action: "Verificar registros contábeis, cruzar projeções de receita e analisar o fluxo de caixa para garantir precisão e consistência. (*Quality of Earnings*).",
+                        level_en: "Analyst/Manager (Finance)", role_en: "Data Analysis", action_en: "Verify accounting records, cross-check revenue projections, and analyze cash flow to ensure accuracy and consistency (Quality of Earnings)."
+                    }
+                ],
+                glossary: [] // No glossary for M&A here
+            },
+            {
+                id: "realestate",
+                color: "purple",
+                title: "2. Comprando um Imóvel (Imobiliário)",
+                english: "Real Estate Due Diligence",
+                pt_concept: "Checagem de Imóvel e Vendedor (Pessoa Física)",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-4 0H5m4 0v-7a2 2 0 012-2h2a2 2 0 012 2v7m-8 0h8" /></svg>`,
+                description_pt: "Antes de fechar a compra de um imóvel, é a fase de **tirar certidões**. Você checa a **matrícula do imóvel** no Cartório de Registro (para ver se tem hipoteca, penhora ou dívidas de IPTU/Condomínio) e, crucialmente, verifica a situação legal do **vendedor** (se ele não tem processos judiciais ou dívidas que possam afetar a venda. O termo mais comum é **'Diligência de Certidões'**.",
+                american_concept: "Title search and escrow protection. Checking the **chain of title** (who owned it before), ensuring there are no **liens**, unpaid property taxes, or legal claims against the property or the seller before closing.",
+                american_jargon: "Title Search, Title Insurance, Escrow, Closing Disclosure (CD), Liens and Encumbrances.",
+                positions: [
+                    { 
+                        level: "Comprador", role: "Mitigação de Risco Pessoal", action: "Solicitar e analisar todas as **Certidões Negativas** (do imóvel e do vendedor) para garantir que a transação não será anulada por problemas legais futuros.",
+                        level_en: "Buyer", role_en: "Personal Risk Mitigation", action_en: "Request and analyze all Negative Certificates (of the property and the seller) to ensure the transaction will not be annulled by future legal problems."
+                    },
+                    { 
+                        level: "Advogado Imobiliário", role: "Revisão Legal", action: "Elaborar e revisar o Contrato de Compra e Venda, garantindo que as cláusulas protejam o comprador de passivos e custos não declarados.",
+                        level_en: "Real Estate Attorney", role_en: "Legal Review", action_en: "Draft and review the Purchase and Sale Agreement, ensuring clauses protect the buyer from undeclared liabilities and costs."
+                    }
+                ],
+                // UPDATED GLOSSARY DATA HERE
+                glossary: [
+                    { pt: "Matrícula do Imóvel", en: "Property Title Record / Chain of Title" },
+                    { pt: "Cartório de Registro", en: "Title Registry Office" },
+                    { pt: "Tirar Certidões", en: "Obtaining Clearances / Certificate Search" },
+                    { pt: "Imóvel", en: "Real Estate / Property" },
+                    { pt: "Vendedor", en: "Seller / Vendor" },
+                    { pt: "Penhora", en: "Lien / Seizure / Attachment" },
+                    { pt: "Hipoteca", en: "Mortgage / Deed of Trust" },
+                    { pt: "Dívidas (Geral)", en: "Debts / Liabilities" },
+                    { pt: "IPTU", en: "Property Tax / Council Tax" },
+                    { pt: "Condomínio", en: "HOA Fees (Homeowners Association Fees)" },
+                    { pt: "Processos Judiciais", en: "Pending Litigation / Lawsuits" },
+                    { pt: "Custódia (Garantia de Fechamento)", en: "Escrow" },
+                    { pt: "Busca de Título", en: "Title Search / Deed Search" },
+                ]
+            },
+            {
+                id: "relocation",
+                color: "orange",
+                title: "3. Estabelecer-se em Novo País/Cidade (Pessoal)",
+                english: "Personal/Relocation Due Diligence",
+                pt_concept: "Planejamento de Mudança / Pesquisa de Viabilidade",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>`,
+                description_pt: "Não é uma 'diligência' formal, mas a ideia é a mesma: **levantamento de riscos e custos antes de um investimento alto (o tempo e o dinheiro da mudança)**. Envolve pesquisar **vistos**, custo de vida em reais, bairros seguros, escolas (comunicação: se aceitam a grade curricular brasileira), sistema de saúde e regras de impostos. É a **'pesquisa de viabilidade de vida'**.",
+                american_concept: "Cost-Benefit Analysis/Feasibility Study. It’s analyzing tax implications (**state/federal**), cost-of-living index, school district ratings (e.g., *The Great Schools Rating*), and professional licensing requirements before committing to a move.",
+                american_jargon: "Cost-of-Living Index (CoLI), Tax Implications, School District Zoning, Feasibility Study, Licensure Reciprocity.",
+                positions: [
+                    { 
+                        level: "Expatriado/Profissional em Mudança", role: "Avaliação de Viabilidade", action: "Criar um orçamento detalhado comparando custos atuais com os projetados na nova localização, ajustando taxas de câmbio e regimes fiscais (custo de vida, impostos).",
+                        level_en: "Expatriate/Relocating Professional", role_en: "Feasibility Assessment", action_en: "Create a detailed budget comparing current costs with projected costs in the new location, adjusting for exchange rates and tax regimes (cost of living, taxes)."
+                    },
+                    { 
+                        level: "Especialista de RH/Mobilidade Global", role: "Compliance & Suporte", action: "Garantir que todos os requisitos de visto (*visa compliance*) sejam atendidos, coordenar logística internacional e fornecer recursos de adaptação cultural.",
+                        level_en: "HR/Global Mobility Specialist", role_en: "Compliance & Support", action_en: "Ensure all visa compliance requirements be met, coordinate international logistics, and provide cultural adaptation resources."
+                    }
+                ],
+                glossary: []
+            },
+            {
+                id: "it",
+                color: "blue",
+                title: "4. Implementando um Novo Sistema (TI/ERP)",
+                english: "Technical & Operational Due Diligence (Pre-Implementation)",
+                pt_concept: "Avaliação Técnica / Prova de Conceito (POC)",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>`,
+                description_pt: "É a fase de **testar o sistema 'na pele'** antes de gastar milhões na implementação. Envolve verificar se o software atende às **regras fiscais brasileiras** (o famoso *'compliance'* com a legislação), se ele se integra com os sistemas legados da empresa, e se o fornecedor tem suporte local robusto. É a **'Prova de Conceito (POC)'** ou **'Gap Analysis'** do sistema.",
+                american_concept: "Vetting the vendor and **stress-testing the tech stack**. Before signing a massive contract for enterprise software, you run a **Proof of Concept (PoC)** to see if it actually works with your existing ecosystem and can scale.",
+                american_jargon: "Proof of Concept (PoC), Vendor Vetting, Technical Fit Assessment, Gap Analysis, Scalability Testing, System Audit.",
+                positions: [
+                    { 
+                        level: "Gerente de Projeto (TI)", role: "Mapeamento de Requisitos", action: "Liderar workshops para mapear todos os processos de negócio críticos (AS-IS) contra as capacidades do sistema (TO-BE), identificando falhas (*gaps*).",
+                        level_en: "Project Manager (IT)", role_en: "Requirements Mapping", action_en: "Lead workshops to map all critical business processes (AS-IS) against system capabilities (TO-BE), identifying gaps."
+                    },
+                    { 
+                        level: "Arquiteto Técnico/Desenvolvedor", role: "Auditoria de Sistema", action: "Revisar segurança, escalabilidade do sistema sob carga esperada, e as APIs de integração para garantir compatibilidade com a infraestrutura existente.",
+                        level_en: "Technical Architect/Developer", role_en: "System Audit", action_en: "Review security, system scalability under expected load, and integration APIs to ensure compatibility with existing infrastructure."
+                    }
+                ],
+                glossary: []
+            }
+        ];
+
+        // --- 2. RENDERING FUNCTIONS ---
+
+        function renderScenarioCard(scenario) {
+            // Updated colors for dark mode: using x-400 for icons/highlights, gray-800/900 for backgrounds
+            const baseColor = `${scenario.color}-400`; // Lighter color for visibility on dark background
+            const borderHeavy = `border-${scenario.color}-500`;
+
+            // 1. Render Positions/Levels
+            const positionsHtml = scenario.positions.map(pos => `
+                <div class="mb-3 p-4 rounded-lg bg-gray-900 border-l-4 border-gray-700 shadow-sm">
+                    <!-- PT Level and Role -->
+                    <p class="text-sm font-bold text-gray-100">
+                        ${pos.level} (<span class="text-${baseColor}">${pos.role}</span>)
+                    </p>
+                    <!-- EN Level and Role -->
+                    <p class="text-xs text-gray-400 mb-2">
+                        <span class="font-medium">${pos.level_en}</span> (<span class="italic">${pos.role_en}</span>)
+                    </p>
+                    
+                    <!-- PT Action -->
+                    <p class="text-sm text-gray-300 mt-1">
+                        <span class="font-semibold text-gray-400">Ação (PT):</span> ${pos.action}
+                    </p>
+                    <!-- EN Action -->
+                    <p class="text-sm text-gray-300 mt-1 border-t pt-1 border-gray-700">
+                        <span class="font-semibold text-gray-400">Action (EN):</span> ${pos.action_en}
+                    </p>
+                </div>
+            `).join('');
+
+            // 2. Render Glossary Table (if data exists)
+            let glossaryHtml = '';
+            if (scenario.glossary && scenario.glossary.length > 0) {
+                const rows = scenario.glossary.map(item => `
+                    <tr>
+                        <td class="px-4 py-2 border-r border-gray-700 text-gray-200 font-medium">${item.pt}</td>
+                        <td class="px-4 py-2 text-${baseColor} font-semibold">${item.en}</td>
+                    </tr>
+                `).join('');
+
+                glossaryHtml = `
+                    <div class="mt-8 pt-6 border-t border-gray-700">
+                        <h4 class="text-xl font-bold text-gray-100 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-${baseColor}" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.794 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.794 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.206 18 16.5 18s-3.332.477-4.5 1.253" /></svg>
+                            Glossário Imobiliário (PT ↔ EN)
+                        </h4>
+                        <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-700">
+                            <table class="min-w-full divide-y divide-gray-700 text-sm">
+                                <thead class="bg-gray-700">
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-semibold text-gray-400 uppercase tracking-wider w-1/2">
+                                            Termo em Português
+                                        </th>
+                                        <th class="px-4 py-3 text-left text-xs font-semibold text-gray-400 uppercase tracking-wider w-1/2">
+                                            Equivalente em Inglês (Jargão DD)
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-gray-800 divide-y divide-gray-700">
+                                    ${rows}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+            }
+
+
+            return `
+                <div class="p-6 md:p-8 bg-gray-800 rounded-xl shadow-xl border-t-8 ${borderHeavy} transition duration-300 hover:shadow-2xl">
+                    <!-- Title and Icon -->
+                    <div class="flex items-start justify-between mb-6">
+                        <h3 class="text-3xl font-extrabold text-gray-100 flex items-center">
+                            ${scenario.icon}
+                            <span class="ml-3">${scenario.title}</span>
+                        </h3>
+                        <span class="text-lg font-semibold text-${baseColor} p-2 rounded-full border border-${baseColor} hidden sm:block">${scenario.english}</span>
+                    </div>
+
+                    <!-- Core DD Comparison (Brazil vs. US) -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                        
+                        <!-- Brazilian Context (Changed bg-white to bg-gray-900) -->
+                        <div class="bg-gray-900 p-5 rounded-lg border-l-4 border-${baseColor} shadow-md">
+                            <p class="text-xl font-bold text-${baseColor} mb-2">
+                                🇧🇷 Contexto Brasileiro:
+                            </p>
+                            <p class="text-gray-300 leading-relaxed">
+                                ${scenario.description_pt}
+                            </p>
+                            <p class="mt-4 text-sm font-semibold text-gray-400 italic">
+                                Termo Formal: ${scenario.pt_concept}
+                            </p>
+                        </div>
+
+                        <!-- American Context (Changed bg-gray-100 to bg-gray-700) -->
+                        <div class="bg-gray-700 p-5 rounded-lg border-l-4 border-gray-600 shadow-md">
+                            <p class="text-xl font-bold text-gray-200 mb-2">
+                                🇺🇸 American Way:
+                            </p>
+                            <p class="text-gray-300 leading-relaxed italic">
+                                "${scenario.american_concept}"
+                            </p>
+                            <p class="mt-4 text-sm font-semibold text-gray-400">
+                                Jargão Comum: <span class="text-gray-100">${scenario.american_jargon}</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- INSERT GLOSSARY HERE -->
+                    ${glossaryHtml}
+                    
+                    <!-- Positions and Actions -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-100 border-b pb-2 mb-4 mt-8 border-gray-700">
+                            DD em Diferentes Níveis e Funções (PT/EN)
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            ${positionsHtml}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Renders all scenario sections
+        function renderScenarioSections() {
+            const container = document.getElementById('dd-scenarios');
+            let totalHtml = '';
+
+            DD_SCENARIOS.forEach(scenario => {
+                totalHtml += renderScenarioCard(scenario);
+            });
+
+            container.innerHTML = totalHtml;
+        }
+
+        // --- 3. INITIALIZATION ---
+        window.onload = function() {
+            renderScenarioSections();
+        };
+
+    </script>
+</body>
+</html>
